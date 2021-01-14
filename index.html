@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>world map</title>
+
+ <script data-require="jquery@2.2.4" data-semver="2.2.4" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+ <link data-require="bootstrap@3.3.7" data-semver="3.3.7" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+ <script data-require="bootstrap@3.3.7" data-semver="3.3.7" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/js/bootstrap-select.min.js"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/css/bootstrap-select.min.css" />
+
+
+ <style>
+  
+
+* {
+            font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
+        }
+        h1, h2, h3, h4, h5, h6 {
+            color:#FFFFFF;
+            font-weight: 50;
+        }
+       p, label {
+               color:#FFFFFF;
+           
+
+       }
+       path{
+
+        stroke : #F8F8F8;
+    stroke-width: 0.5;
+    fill: #808080;
+}
+        
+body{
+background-color: #303030;
+}
+        
+        .details {
+            bottom:  0px;
+            visibility: hidden;
+            width: 50px;
+            padding: 10px;
+            height: 30%;
+            opacity: 0.8;
+            position: absolute;
+            color:#FFFFFF;
+            font-size: 20px;
+
+        }
+        header{
+  height: 11%;
+  width: 100%;
+  padding-bottom: 12px;
+}
+
+header .title {
+  text-align: center;
+}
+
+.info {
+  font-size: 16px;
+  font-style: italic;
+  text-align: right;
+}
+
+.container{
+  color:#FFFFFF;
+
+}
+
+
+.abutton { 
+  background: #FFFFFF; padding:5px; border-radius: 5px; 
+  transition: 1s; text-decoration: none; color: black;  text-align: center;
+}
+
+.abutton {
+  position:absolute;
+  top: 75px;
+  right:25px;
+}
+
+
+
+</style>
+
+
+</head>
+
+<body>   
+	<header>
+			<div class="title">
+				<h1>World War II Overview</h1>
+			</div>
+			
+	</header>
+  
+     <span>
+    <label>Select:</label>
+    <select id="dataset" onchange = "changeData()" class="selectpicker" data-width="auto">
+        <option selected value="map">Total Deaths</option>
+
+        <option  value="1939"> 1939</option>
+        <option value="1940"> 1940</option>
+        <option value="1941"> 1941</option>
+        <option value="1942"> 1942</option>
+        <option value="1943"> 1943</option>
+        <option value="1944"> 1944</option>
+        <option value="1945"> 1945</option>
+        <option value="1946"> 1946</option>
+    </select>
+</span> 
+<a href="barchart2.html" class="abutton">Casualties Analysis</a>
+ </div>
+<div id = "chart"> </div>
+	
+<div id = "map" class="details">
+	<h2 class="country"></h2>
+    <p class="max"></p>
+    
+
+</div>
+
+
+
+
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.js"></script>
+
+
+
+
+     <script type="text/javascript" src="js/script_map.js"></script>
+
+<footer>  <div class="footer">
+				<h5 class="info" >Final Project - Data Visualization</h5>
+				<h6 class="info">Jukanna Nityanand, nnitu905@gmail.com</h6>
+			</div>
+		</footer>
+
+
+</body>
+</html>

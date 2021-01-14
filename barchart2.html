@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  
+  
+  
+
+
+
+<style>
+
+* {
+            font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
+        }
+        h1, h2, h3, h4, h5, h6 {
+            color:#FFFFFF;
+            font-weight: 50;
+             font-size: 30px;
+        }
+
+       
+body {
+  font: 10px sans-serif;
+  background-color:  #303030;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+p {
+  color:#FFFFFF;
+  font-size: 22px;
+       }
+
+.axis1 path,
+.axis1 line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+.x.axis1{
+  fill: white;
+  font-size: 13px;
+  
+}
+
+.x.axis path {
+  display: none;
+
+}
+.x.axis{
+  fill: white;
+
+}
+
+
+.y.axis{
+  fill: white;
+
+}
+
+.y.axis1{
+  fill: white;
+  font-size: 10px;
+}
+
+.tooltip{
+  
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  fill:#ffffff ;
+  position: absolute;
+  text-align: center;
+  padding: .2rem;
+  background: #313639;
+  color: #f9f9f9;
+  border: 0px;
+  border-radius: 8px;
+  pointer-events: none;
+     
+
+
+
+
+}
+
+
+div.tooltip1 {
+     position: absolute;
+     text-align: center;
+     padding: .2rem;
+     background: #313639;
+     color: #f9f9f9;
+     border: 0px;
+     border-radius: 8px;
+     pointer-events: none;
+     font-size: 15px;
+}
+
+
+header .title {
+  text-align: center;
+}
+
+
+.abutton { 
+  background: #FFFFFF; padding:5px; border-radius: 5px; 
+  transition: 1s; text-decoration: none; color: black;  text-align: center; font-size: 14.5px;
+}
+
+.abutton {
+  position:absolute;
+  
+  top: 75px;
+  right:190px;
+}
+.abutton2 { 
+  background: #FFFFFF; padding:5px; border-radius: 5px; 
+  transition: 1s; text-decoration: none; color: black;  text-align: center; font-size: 14.5px;
+}
+
+.abutton2{
+  position:absolute;
+  top: 75px;
+  right:20px;
+
+  
+}
+
+p{
+  text-align: center;
+}
+
+
+
+</style>
+
+
+</head>
+<body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.13/d3.min.js"></script>
+  <header>
+      <div class="title">
+        <h1>World War II Overview</h1>
+        <p> Casualties Analysis </p>
+       </div>
+      <p>Total Civilians Deaths in World War II  (1939 - 1946)</p>
+  </header>
+
+  
+    <a href="index.html" class="abutton">World War Map</a>
+    
+        
+      <a href="bubble.html" class="abutton2">Casualties Analysis 2</a>
+ 
+ </div>
+
+ 
+<div id = "stack">
+  <div id = "legend">
+
+  </div>
+</div>
+
+
+
+
+<div id = "text"> </div>
+
+<div> <p> Total Death Rate Of  World War II From Different Years</p></div>
+
+  <div id = "scatter_and_pie">
+   
+  </div>
+  
+  
+
+
+<script src="js/chart8.js"></script>
+
+
+</body>
+</html>
