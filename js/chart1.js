@@ -317,8 +317,8 @@ state.selectAll("rect")
 
 
     var margin1 = {top: 45, right: 50, bottom: 80, left:40};
-   width1 = 900 - margin1.left - margin1.right;
-    height1 = 500 - margin1.top - margin1.bottom;
+   width1 = 800 - margin1.left - margin1.right;
+    height1 = 550 - margin1.top - margin1.bottom;
 
 var svg1 = d3.select("#scatter_and_pie").append("svg")
     .attr("class","scatter")
@@ -367,7 +367,7 @@ var yAxis1 = d3.svg.axis()
 
 
     var colors = d3.scale.ordinal()
-    .range(["#00FFFF"/*, "#73A5C6","#528AAE","#2E5984","#1E3F66"*/]);
+    .range(["#40FFFF"/*, "#73A5C6","#528AAE","#2E5984","#1E3F66"*/]);
     
 
 
