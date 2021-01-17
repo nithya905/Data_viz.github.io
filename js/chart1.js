@@ -17,8 +17,8 @@ var x = d3.scale.ordinal()
 var y = d3.scale.linear()
     .rangeRound([height, 0],);
 
-var color = d3.scale.ordinal()
-    .range(["#BCD2E8", "#91BAD6", "#73A5C6","#528AAE","#2E5984","#1E3F66"]);
+    var color = d3.scale.ordinal()
+    .range(["#d25c4d", "#f2b447", "#008000"]);
 
 
 var xAxis = d3.svg.axis()
@@ -317,7 +317,7 @@ state.selectAll("rect")
 
 
     var margin1 = {top: 45, right: 50, bottom: 80, left:40};
-   width1 = 700 - margin1.left - margin1.right;
+   width1 = 900 - margin1.left - margin1.right;
     height1 = 500 - margin1.top - margin1.bottom;
 
 var svg1 = d3.select("#scatter_and_pie").append("svg")
@@ -330,7 +330,7 @@ var svg1 = d3.select("#scatter_and_pie").append("svg")
 
     
 
-var xScale = d3.scale.linear()
+    var xScale = d3.scale.linear()
     .rangeRound([margin1.left, width1 - margin1.right]);
 
 
@@ -338,7 +338,7 @@ var yScale = d3.scale.linear()
     .rangeRound([height1, 0]);
 
 var radius = d3.scale.sqrt()
-    .range([5,12]);
+    .range([5,13]);
 
 var xAxis1 = d3.svg.axis()
     .scale(xScale)
@@ -367,7 +367,7 @@ var yAxis1 = d3.svg.axis()
 
 
     var colors = d3.scale.ordinal()
-    .range(["#91BAD6"/*, "#73A5C6","#528AAE","#2E5984","#1E3F66"*/]);
+    .range(["#00FFFF"/*, "#73A5C6","#528AAE","#2E5984","#1E3F66"*/]);
     
 
 

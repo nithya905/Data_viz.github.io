@@ -60,7 +60,7 @@ function drawMap (world,data){
  var path = d3.geoPath().projection(projection)
              
 
- var color = d3.scaleThreshold()
+ var color = d3.scaleLinear()
  .domain([100, 10000, 500000, 1000000, 5000000, 10000000, 50000000, 100000000, 50000000])
  .range(['#f7fcf5','#e5f5e0','#c7e9c0','#a1d99b','#74c476','#41ab5d','#238b45','#006d2c','#00441b']);
  
