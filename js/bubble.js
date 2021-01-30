@@ -1,6 +1,12 @@
  var margin = {top: 50, right: 50, bottom: 50, left: 50},
             width = 1200 - margin.left - margin.right,
             height = 700 - margin.top - margin.bottom;
+
+
+
+
+
+
  
 function bubbleChart() {
     
@@ -48,15 +54,27 @@ function bubbleChart() {
     function chart(selector, rawData) {
   
       nodes = createNodes(rawData);
-  
-      
+    
+
       svg = d3.select(selector)
         .append('svg')
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom)
         .attr("class", "bubble_chart")
         .attr("transform", "translate(" + margin.left + "," + margin.top+  ")")
-  
+
+        var linear = d3.scaleLinear()
+        .domain([0,10])
+        .range(["rgb(46, 73, 123)", "rgb(71, 187, 94)"]);
+
+        var svg1 = d3.select("#legend");
+
+svg1.append("g")
+  .attr("class", "legendLinear")
+  .attr("transform", "translate(20,90)");
+
+
+
       
       const elements = svg.selectAll('.bubble')
         .data(nodes, function (d) { return d.Death })

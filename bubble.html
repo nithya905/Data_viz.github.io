@@ -9,7 +9,8 @@
     <script data-require="bootstrap@3.3.7" data-semver="3.3.7" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/js/bootstrap-select.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/css/bootstrap-select.min.css" />
-   
+  
+
 
 <style>
     * {
@@ -63,6 +64,10 @@ font-weight: 700;
   top: 75px;
   right:200px;
 }
+#legendLinear{
+  background-color: pink;
+}
+
 
 
 </style>
@@ -73,7 +78,7 @@ font-weight: 700;
         <div class="title">
             <h1>World War II Overview</h1>
             <p> Casualties Analysis </p>
-            <h5>Total Deaths in World War II  (1939 - 1946)</h5>
+            <h5>Total Deaths in World War II  (1939 - 1945)</h5>
         </div>
         <div><a href="barchart2.html" class="abutton1">Casualties Analysis 1</a> 
         
@@ -83,7 +88,10 @@ font-weight: 700;
         
 </header>
 
-    <div id = 'vis'></div>
+    <div id = 'vis'>
+<div id = "legend"></div>
+
+    </div>
 
    
 
@@ -91,7 +99,7 @@ font-weight: 700;
 </div>
 
 
-    <script src="js/bubble1.js"></script>
+    <script src="js/bubble.js"></script>
 </body>
 
 

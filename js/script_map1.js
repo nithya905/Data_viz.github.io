@@ -7,8 +7,14 @@ var padding = 30;
 var inputValue = null;
 var year = ["1939","1940","1941","1942","1943","1944","1945","1946"];
 
+
+            
+            
+
+
 var svg = d3.select("body")
             .append("svg")
+            
             .style("cursor", "move")
             .attr("width",width)
             .attr("height",height)
@@ -17,8 +23,8 @@ var svg = d3.select("body")
 
 
         
- svg.attr("viewBox", "-50 80 " + width + " " + height)
-.attr("preserveAspectRatio", "xMinYMin");
+             svg.attr("viewBox", "-50 80 " + width + " " + height)
+             .attr("preserveAspectRatio", "xMinYMin");
 
 
  
@@ -29,6 +35,7 @@ map= svg.append("g").attr("class","gmap") .attr("transform", "translate(0," + he
 
 
 var zoom = d3.zoom()
+.scaleExtent([1, 2])
     .on("zoom", function () {
         var transform = d3.zoomTransform(this);
         map.attr("transform", transform);
@@ -49,13 +56,13 @@ svg.call(zoom);
     });
 
 
-
+   
 
 
 function drawMap (world,data){
              	
 
- var projection = d3.geoMercator().translate([width/2-25, height/2+15]).scale([width/8]);
+ var projection = d3.geoMercator().translate([width/2-35, height/2+25]).scale([width/6.8]);
 
  var path = d3.geoPath().projection(projection)
              

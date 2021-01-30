@@ -338,11 +338,21 @@ var yScale = d3.scale.linear()
     .rangeRound([height1, 0]);
 
 var radius = d3.scale.sqrt()
-    .range([5,13]);
+    .range([5,14]);
+
+     svg1.append('text')
+      .attr('x', -250)
+      .attr('y', -25)
+      .attr('class', 'label1')
+      .text('Total  Deaths')
+      .style("font-size",18)
+      .style("fill","white")
+      .attr("transform", "rotate(-90)");
 
 var xAxis1 = d3.svg.axis()
     .scale(xScale)
     .orient("bottom")
+    .ticks(5)
     .tickFormat(function(d) {
     return  d
 });
@@ -355,14 +365,7 @@ var yAxis1 = d3.svg.axis()
 
 
 
-        svg1.append('text')
-      .attr('x', -250)
-      .attr('y', -25)
-      .attr('class', 'label1')
-      .text('Total  Deaths')
-      .style("font-size",18)
-      .style("fill","white")
-      .attr("transform", "rotate(-90)");
+       
 
 
 
@@ -372,17 +375,20 @@ var yAxis1 = d3.svg.axis()
 
 
 
-    d3.csv("data1/WW2_scatter1.csv", function(error, data1){
+    d3.csv("data1/WW2_scatter2.csv", function(error, data1){
     
         if (error) throw error;
     data1.forEach(function(d){
        d.DeathsFinal = +d.DeathsFinal;
-       d.year= +d.year;
+       d.years= +d.year;
+
     
       
     });
  
-xScale.domain(d3.extent(data1, function(d){  return d.year ;  })).nice();
+xScale.domain(d3.extent(data1, function(d){  return  d.years  ;  })).nice()
+
+
 
 yScale.domain(d3.extent(data1, function(d){ return d.DeathsFinal; })).nice();
 
@@ -407,7 +413,7 @@ radius.domain(d3.extent(data1, function(d){ return d.DeathsFinal; })).nice();
 
       .attr("transform", "translate(" + (margin.left-30) + ",0)");
       
-      var div = d3.select("body").append("div")
+     var div = d3.select("body").append("div")
       .attr("class", "tooltip1")
       .style("opacity", 0);
 
@@ -416,7 +422,7 @@ radius.domain(d3.extent(data1, function(d){ return d.DeathsFinal; })).nice();
       .enter()
       .append('circle')
       .attr('class', 'bubble')
-      .attr('cx', function(d){return xScale(d.year);})
+      .attr('cx', function(d){return xScale(d.years);})
       .attr('cy', function(d){ return yScale(d.DeathsFinal); })
       .attr('r', function(d){ return radius(d.DeathsFinal ); })
       .style('fill', function(d){ return colors(d.DeathsFinal); })
