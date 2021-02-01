@@ -147,7 +147,7 @@ state.selectAll("rect")
          d3.select(this).attr("stroke","white").attr("stroke-width",2).style("cursor", "pointer");
          
        
-         formatValue = d3.format(".2s");
+         
         svg.append("text")
           
           .attr("x",xPos)
@@ -155,7 +155,7 @@ state.selectAll("rect")
           .attr("class","tooltip")
           .transition()
           
-          .text(formatValue(delta));
+          .text((delta));
       
      
 
@@ -164,7 +164,7 @@ state.selectAll("rect")
        })
        .on("mouseout",function(){
           svg.select(".tooltip").remove();
-          d3.select(this).attr("stroke","black").attr("stroke-width",0.3);
+          d3.select(this).attr("stroke","black").attr("stroke-width",0.0);
                                 
         });
 
