@@ -50,7 +50,7 @@ var legendClassArray = [];
 var y_orig; 
 
 
-d3.csv("data1/Casualties-bar1.csv", function(error, data) {
+d3.csv("data1/bar.csv", function(error, data) {
   if (error) throw error;
 
 
@@ -146,7 +146,7 @@ state.selectAll("rect")
 
          d3.select(this).attr("stroke","white").attr("stroke-width",2).style("cursor", "pointer");
          
-       
+    
          
         svg.append("text")
           
