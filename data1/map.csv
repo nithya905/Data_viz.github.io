@@ -27,14 +27,14 @@ Hungary,804500.0
 Iceland,200.0
 India,2087000.0
 Indonesia,3500000.0
-Iran,200.0
+"Iran, Islamic Republic of",200.0
 Iraq,500.0
 Ireland,200.0
 Italy,444290.0
 Japan,2927149.5
 Kazakhstan,20045724.0
 Kiribati,500.0
-Korea,430500.0
+"Korea, Democratic People's Republic of",430500.0
 Kosovo,1027000.0
 Kyrgyzstan,20045724.0
 Lao People's Democratic Republic,1250000.0
@@ -57,7 +57,7 @@ Philippines,807000.0
 Poland,5720000.0
 Portugal,55000.0
 Romania,800000.0
-Ruanda,150000.0
+Rwanda,150000.0
 Russian Federation,20045724.0
 Serbia,1027000.0
 Singapore,50000.0
@@ -72,6 +72,7 @@ Turkmenistan,20045724.0
 Ukraine,20045724.0
 United Kingdom,450901.0
 United States,288001.0
-Urundi,150000.0
+Burundi,150000.0
 Uzbekistan,20045724.0
 Viet Nam,1250000.0
+"Korea, Republic of",430500.0

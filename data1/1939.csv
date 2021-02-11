@@ -21,12 +21,12 @@ Greece,327550
 Hungary,504500
 Iceland,200
 India,2087000
-Iran,200
+"Iran, Islamic Republic of",200
 Iraq,500
 Ireland,200
 Italy,152920
 Japan,2566255
-Korea,430500
+"Korea, Democratic People's Republic of",430500
 Latvia,230000
 Lithuania,350000
 Luxembourg,2000
@@ -47,13 +47,11 @@ Rwanda,150000
 Singapore,50000
 Slovakia,65500
 South Africa,11900
-Soviet Union,900000
 Sweden,600
 Switzerland,100
 Thailand,7600
 Turkey,200
 United Kingdom,3472
-Yugoslavia,60500
 Lao People's Democratic Republic,1250000
 Cambodia,1250000
 Viet Nam,1250000
@@ -75,3 +73,5 @@ Serbia,60500
 Montenegro,60500
 "Macedonia, the former Yugoslav Republic of",60500
 Kosovo,60500
+"Korea, Republic of",430500
+Burundi,150000
